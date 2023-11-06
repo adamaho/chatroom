@@ -10,7 +10,11 @@ implements an http2 streaming chatroom using nodejs http2 server and honojs.
 mkcert localhost
 ```
 
-2. run the server
+2. rename the certs
+    - localhost-key.pem -> key.pem
+    - localhost.pem -> cert.pem
+
+3. run the server
     a. run node version
         ```
         pnpm dev
