@@ -20,7 +20,7 @@ const chatroom = new Chatroom();
 
 const app = new Hono();
 
-app.get("/", (c) => {
+app.get("/", () => {
   const address = randomUUID();
 
   const { readable, writable } = new TransformStream();
