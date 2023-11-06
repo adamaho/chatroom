@@ -1,0 +1,22 @@
+{
+  "name": "reel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx --watch ./src/index.ts",
+    "hono": "tsx --watch ./src/hono.ts"
+  },
+  "keywords": [],
+  "author": "Adam Aho",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.8.10",
+    "tsx": "^3.14.0"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.2.0",
+    "hono": "^3.9.2"
+  }
+}
