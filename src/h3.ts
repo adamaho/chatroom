@@ -25,7 +25,7 @@ app.use(
 
       sendStream(event, readable);
     } else if (method === "POST") {
-      const message = await readBody(event);
+      const message = await readBody<string>(event);
       chatroom.send(message);
       return "Message sent";  
     }
