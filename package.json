@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx --watch ./src/index.ts",
-    "hono": "tsx --watch ./src/hono.ts"
+    "node": "tsx --watch ./src/index.ts",
+    "hono": "tsx --watch ./src/hono.ts",
+    "h3": "tsx --watch ./src/h3.ts"
   },
   "keywords": [],
   "author": "Adam Aho",
@@ -17,6 +18,7 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.2.0",
+    "h3": "^1.8.2",
     "hono": "^3.9.2"
   }
 }

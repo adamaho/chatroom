@@ -8,7 +8,7 @@ type Client = {
 class Chatroom {
   private clients: Map<string, Client> = new Map();
 
-  constructor() {}
+  constructor() { }
 
   join = (address: string, conn: WritableStreamDefaultWriter) => {
     this.clients.set(address, { conn, last_message: null });

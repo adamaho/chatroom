@@ -6,15 +6,7 @@ import { createSecureServer } from "node:http2";
 import { serve } from "@hono/node-server";
 import { Hono } from "hono";
 
-import { Chatroom } from "./chatroom-hono";
-
-function delay(delay: number) {
-  return new Promise((res) => {
-    setTimeout(() => {
-      res("");
-    }, delay);
-  });
-}
+import { Chatroom } from "./chatroom-fetch";
 
 const chatroom = new Chatroom();
 
